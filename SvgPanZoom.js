@@ -176,7 +176,7 @@ export default class SvgPanZoom extends Component {
             scaleAnimation: new Animated.Value(vt.scaleX),
         };
     }
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         this.state.scaleAnimation.addListener((zoom) => { this.props.onZoom(zoom.value); });
         this.prInstance = PanResponder.create({
             onStartShouldSetPanResponder: (evt, gestureState) => false,
