@@ -43,7 +43,7 @@ export default class SvgPanZoom extends Component<Props, State> {
     prTargetOuter: any;
     constructor(props: Props);
     dropNextEvt: number;
-    componentWillMount(): void;
+    UNSAFE_componentWillMount(): void;
     render(): JSX.Element;
     _onLayout: (event: any) => void;
     getInitialViewTransform(canvasWidth: number, canvasHeight: any, scale: number): ViewTransform;
