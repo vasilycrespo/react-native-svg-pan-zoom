@@ -177,7 +177,7 @@ class SvgPanZoom extends react_1.Component {
             scaleAnimation: new react_native_1.Animated.Value(vt.scaleX),
         };
     }
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         this.prInstance = react_native_1.PanResponder.create({
             onStartShouldSetPanResponder: (evt, gestureState) => false,
             onStartShouldSetPanResponderCapture: (evt, gestureState) => false,
